@@ -1,16 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-  background-color: red;
   font-family: "Barlow", sans-serif;
   width: 1440px;
   height: 1870px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -38,32 +35,83 @@ body button {
   border: 0;
 }
 
-body img {
-  border-radius: 20px;
-}
-
-body div.pre-order {
-  width: 1100px;
+body div.conteneur {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  margin-top: 50px;
-  background-image: url(/starter-code/assets/shared/logo.svg);
-  background-repeat: no-repeat;
+  width: 1440px;
+  height: 1870px;
 }
 
-body div.pre-order img {
-  background-size: 40px 40px;
-  height: 40px;
+body div.conteneur div.entente {
+  background-color: red;
 }
 
-body div.pre-order button {
-  text-align: center;
-  margin-left: 895px;
+body div.conteneur div.haut {
+  background-color: #0033ff;
+}
+
+body div.conteneur div.milieu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 255px 445px 255px;
+      grid-template-columns: 255px 445px 255px;
+  background-color: #a2ff00;
+}
+
+body div.conteneur div.milieu .phone {
+  width: 255px;
+  height: 480px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+body div.conteneur div.milieu img.glass {
+  width: 445px;
+  height: 480px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 125px;
+}
+
+body div.conteneur div.bas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 255px 255px 255px 255px;
+      grid-template-columns: 255px 255px 255px 255px;
+  gap: 30px;
+}
+
+body div.conteneur div.bas .bloc {
+  height: 323px;
+}
+
+body div.conteneur div.bas h3 {
+  color: #162542;
+  font-family: Barlow;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28px;
+  /* 116.667% */
+  text-transform: uppercase;
+}
+
+body div.conteneur div.bas p {
+  width: 255px;
+  color: #7B8BAD;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  /* 162.5% */
 }
 /*# sourceMappingURL=style.css.map */
